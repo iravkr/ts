@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "cco-mon.fullname" . }}
+  labels:
+    app: {{ include "cco-mon.fullname" . }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: grpc
+      port: {{ .Values.service.grpc.port }}
+      targetPort: 5150
+  selector:
+    app: cco
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "cco-mon.fullname" . }}-external
+spec:
+  type: NodePort
+  ports:
+    - port: 5150
+      targetPort: 5150
+      nodePort: 30008
+  selector:
+    app: cco
+

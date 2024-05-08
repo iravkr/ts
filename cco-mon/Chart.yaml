@@ -1,0 +1,8 @@
+apiVersion: v2
+name: cco-mon
+description: CCO MON Xapp
+kubeVersion: ">=1.16.0"
+type: application
+version: 0.1.1
+appVersion: v0.1.1
+

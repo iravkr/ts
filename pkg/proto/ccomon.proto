@@ -1,0 +1,43 @@
+syntax ="proto3";
+
+option go_package = "./proto";
+
+package cco_mon_service;
+
+service CCOMonitoringService {
+  rpc GetRsrpReports(NoParam) returns (stream RsrpInfo);
+  rpc GetCellInfo(NoParam) returns (stream CellInfo);
+  rpc SetCellPTX(CellInfo) returns (Response);
+  rpc GetOcn(GetOcnRequest) returns (GetOcnResponse);
+}
+
+message NoParam {};
+
+message RsrpInfo {
+    string time = 1;
+    string ueid = 2;
+    int64 fiveqi = 3;
+    string cgi = 4;
+    int32 rsrp_serving = 5;
+    map<string, int32> rsrp_neighbors = 6;
+}
+
+message CellInfo  {
+  string cgi = 1;
+  float  ptx = 2;
+}
+
+message Response {
+  string response = 1;
+}
+
+message GetOcnRequest {
+}
+
+message GetOcnResponse {
+  map <string, OcnRecord> ocn_map = 1;
+}
+
+message OcnRecord {
+  map<string, int32> ocn_record = 1;
+}

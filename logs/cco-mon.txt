@@ -1,0 +1,1597 @@
+2024-04-15T13:36:37.155Z	INFO	cco-mon	cco-mon/cco-mon.go:59	Starting CCO KPI Monitoring XApp
+2024-04-15T13:36:37.156Z	INFO	northbound	northbound/server.go:144	Loading default CA onfca
+2024-04-15T13:36:37.156Z	INFO	registry	registry/registry.go:55	Started gNMI Agent on port [::]:9339
+2024-04-15T13:36:37.156Z	INFO	northbound	northbound/server.go:179	Starting RPC server on address: [::]:9339
+2024-04-15T13:36:37.156Z	INFO	config/store	store/util.go:44	cannot find the node
+2024-04-15T13:36:37.157Z	ERROR	github.com/onosproject/cco-mon/pkg/config	config/config.go:50	strconv.Atoi: parsing "<nil>": invalid syntax
+github.com/onosproject/cco-mon/pkg/config.(*AppConfig).GetInterval
+	/go/src/github.com/cco-mon/pkg/config/config.go:50
+github.com/onosproject/cco-mon/pkg/manager.NewManager
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:126
+main.main
+	/go/src/github.com/cco-mon/cmd/cco-mon/cco-mon.go:84
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+2024-04-15T13:36:37.157Z	WARN	cco-mon/manager	manager/manager.go:128	set interval to default interval - reason: %vstrconv.Atoi: parsing "<nil>": invalid syntax
+2024-04-15T13:36:37.157Z	INFO	cco-mon/manager	manager/manager.go:155	Reached line no 155
+2024-04-15T13:36:37.157Z	INFO	cco-mon/manager	manager/manager.go:159	Reached line no 159
+2024-04-15T13:36:37.157Z	INFO	cco-mon	cco-mon/cco-mon.go:88	Starting onos-mlb
+2024-04-15T13:36:37.157Z	INFO	cco-mon	cco-mon/cco-mon.go:89	RIC action ID is 0xc00036ad98
+2024-04-15T13:36:37.157Z	INFO	cco-mon	cco-mon/cco-mon.go:115	OG Manager
+2024-04-15T13:36:37.157Z	INFO	cco-mon/manager	manager/manager.go:259	Reached line no 259
+2024-04-15T13:36:37.158Z	INFO	Controller/controller	controller/handler.go:67	Starting the controller
+2024-04-15T13:36:37.166Z	INFO	github.com/onosproject/cco-mon/pkg/southbound/rc	rc/manager.go:227	New E2 connection detected
+2024-04-15T13:36:37.169Z	INFO	github.com/onosproject/cco-mon/pkg/southbound/rc	rc/manager.go:227	New E2 connection detected
+2024-04-15T13:36:37.170Z	INFO	github.com/onosproject/cco-mon/pkg/southbound/rc	rc/manager.go:227	New E2 connection detected
+2024-04-15T13:36:37.172Z	WARN	cco-mon/rnib	rnib/rnib.go:152	aspect 'onos.topo.E2Node' not found in uuid:"7a6b274d-b653-4559-a19a-2fd314819d22" id:"a1:sd-ran-rimedo-ts-7fb74c65c-rs7mk" revision:100 type:ENTITY entity:<kind_id:"xapp" tgt_relation_ids:"uuid:82acd346-7b71-9bf0-c3a0-af4a244a1326" > aspects:<key:"onos.topo.MastershipState" value:<type_url:"onos.topo.MastershipState" value:"{\"term\":\"1\",\"nodeId\":\"uuid:82acd346-7b71-9bf0-c3a0-af4a244a1326\"}" > > aspects:<key:"onos.topo.XAppInfo" value:<type_url:"onos.topo.XAppInfo" value:"{\"interfaces\":[{\"type\":\"INTERFACE_A1_XAPP\",\"ip\":\"192.168.84.11\",\"port\":5150}],\"a1PolicyTypes\":[{\"id\":\"ORAN_TrafficSteeringPreference_2.0.0\",\"name\":\"ORAN_TrafficSteeringPreference\",\"version\":\"2.0.0\",\"description\":\"O-RAN traffic steering\"}]}" > > 
+2024-04-15T13:36:37.220Z	INFO	github.com/onosproject/onos-mho/pkg/broker	broker/broker.go:86	Opened new stream 1 for subscription channel 'cco-mon:cco-mon-584bf8ddf4-6hbcr:e2:1/5154:cco-mon-subscription-MHO_TRIGGER_TYPE_PERIODIC'
+2024-04-15T13:36:37.220Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:36:37.234Z	INFO	github.com/onosproject/onos-mho/pkg/broker	broker/broker.go:86	Opened new stream 2 for subscription channel 'cco-mon:cco-mon-584bf8ddf4-6hbcr:e2:1/5153:cco-mon-subscription-MHO_TRIGGER_TYPE_PERIODIC'
+2024-04-15T13:36:38.159Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:38.163Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:38.163Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:38.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:36:39.163Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:39.168Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:39.168Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:39.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:36:40.168Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:40.171Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:40.171Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:40.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:36:41.171Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:41.175Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:41.175Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:41.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:36:42.176Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:42.181Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:42.181Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:42.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:36:43.181Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:43.184Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:43.184Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:43.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:36:44.185Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:44.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:36:44.189Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:44.189Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:45.189Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:45.193Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:45.193Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:45.242Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:36:46.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -112, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:36:46.193Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:46.198Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:46.198Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:47.199Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:47.202Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:47.202Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:47.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:36:48.202Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:48.206Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:48.206Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:48.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:36:49.206Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:49.210Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:49.210Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:49.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:36:50.210Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:50.213Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:50.213Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:50.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:36:51.213Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:51.216Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:51.216Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:51.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:36:52.216Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:52.219Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:52.219Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:52.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:36:53.220Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:53.230Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:53.230Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:53.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:36:54.232Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:54.235Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:54.235Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:54.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:36:55.236Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:55.239Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:55.239Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:55.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:36:56.240Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:56.245Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:56.246Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:56.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:36:57.246Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:57.249Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:57.249Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:57.840Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:36:58.250Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:58.254Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:58.254Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:58.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:36:59.255Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:36:59.268Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:36:59.268Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:36:59.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:00.268Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:00.272Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:00.272Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:00.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:01.272Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:01.275Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:01.275Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:01.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:37:02.275Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:02.279Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:02.279Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:02.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:03.279Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:03.283Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:03.283Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:03.842Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:04.284Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:04.287Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:04.287Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:04.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:05.288Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:05.295Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:05.295Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:05.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:06.296Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:06.301Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:06.301Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:06.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:37:07.301Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:07.305Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:07.305Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:07.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:37:08.305Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:08.308Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:08.308Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:08.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:37:09.308Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:09.314Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:09.314Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:09.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:37:10.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:37:10.315Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:10.319Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:10.319Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:11.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:37:11.320Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:11.323Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:11.323Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:12.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:37:12.324Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:12.328Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:12.328Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:13.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:37:13.328Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:13.331Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:13.331Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:14.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:37:14.331Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:14.335Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:14.335Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:15.189Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:37:15.335Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:15.339Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:15.339Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:16.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:37:16.339Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:16.342Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:16.343Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:17.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:37:17.343Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:17.347Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:17.347Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:18.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:37:18.348Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:18.351Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:18.351Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:19.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:37:19.351Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:19.355Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:19.355Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:20.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:37:20.355Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:20.358Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:20.358Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:21.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:37:21.359Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:21.362Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:21.362Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:22.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:37:22.362Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:22.365Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:22.365Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:23.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:37:23.366Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:23.370Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:23.370Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:24.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:37:24.370Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:24.373Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:24.373Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:25.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:37:25.374Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:25.379Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:25.379Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:26.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:37:26.379Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:26.382Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:26.382Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:27.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:37:27.383Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:27.387Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:27.387Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:28.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:37:28.387Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:28.392Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:28.392Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:29.186Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:37:29.392Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:29.396Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:29.396Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:30.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:37:30.397Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:30.400Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:30.400Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:31.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:37:31.400Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:31.412Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:31.412Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:32.187Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:37:32.412Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:32.415Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:32.415Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:33.241Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:37:33.416Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:33.419Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:33.419Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:34.419Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:34.423Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:34.423Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:34.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:37:35.424Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:35.427Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:35.428Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:35.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:37:36.428Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:36.432Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:36.432Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:36.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:37:37.433Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:37.436Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:37.436Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:37.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:38.437Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:38.442Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:38.442Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:38.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:39.443Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:39.446Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:39.446Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:39.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:40.447Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:40.450Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:40.450Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:40.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:41.451Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:41.454Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:41.454Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:41.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:37:42.455Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:42.460Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:42.460Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:42.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:43.461Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:43.465Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:43.465Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:43.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:44.466Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:44.470Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:44.470Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:44.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:37:45.470Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:45.473Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:45.473Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:45.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:37:46.474Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:46.477Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:46.478Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:46.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:37:47.478Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:47.482Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:47.482Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:47.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:48.483Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:48.487Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:48.487Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:48.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:37:49.488Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:49.491Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:49.491Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:49.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:37:50.492Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:50.495Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:50.495Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:50.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:51.495Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:51.500Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:51.500Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:51.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:37:52.500Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:52.504Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:52.504Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:52.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:53.504Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:53.508Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:53.508Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:53.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:37:54.509Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:54.513Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:54.513Z	WARN	Controller/controller	controller/handler.go:97	R-NIB does not have enough information - either KPIMON monitoring result or neighbor information is missing
+2024-04-15T13:37:54.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:37:55.514Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:37:55.518Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:37:55.518Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:37:55.518Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:164	#handlerupdateocnstore neighborList
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:168	#handlerupdateocnstore ocn store hydration
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:174	Adding new neighbor: { 138426 14550001 }
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:164	#handlerupdateocnstore neighborList
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:168	#handlerupdateocnstore ocn store hydration
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:174	Adding new neighbor: { 138426 1454c001 }
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:37:55.518Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:37:55.518Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 16
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 11
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 11
+2024-04-15T13:37:55.518Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:11]
+2024-04-15T13:37:55.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:37:56.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:37:57.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:37:59.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:38:00.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:38:01.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:02.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:03.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:04.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:05.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:38:05.523Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:38:05.523Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:38:06.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:06.523Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:38:06.526Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:38:06.526Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:38:06.526Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:38:06.526Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:38:06.527Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:06.527Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 11
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 17
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 17
+2024-04-15T13:38:06.527Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:17]
+2024-04-15T13:38:07.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:08.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:09.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:10.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:11.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:12.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:13.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:38:14.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:15.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:16.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:16.529Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:38:16.529Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:38:17.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:17.530Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:38:17.533Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:38:17.533Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:38:17.533Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:38:17.533Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:17.533Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 17
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 17
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 17
+2024-04-15T13:38:17.533Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:17]
+2024-04-15T13:38:18.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:38:19.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:38:20.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:38:21.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:38:21.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:38:22.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:38:23.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:38:24.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:38:25.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:38:26.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:38:27.536Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:38:27.536Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:38:27.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:38:28.536Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:38:28.540Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:38:28.540Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:38:28.540Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:38:28.540Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:28.540Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 17
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 22
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 22
+2024-04-15T13:38:28.540Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:22]
+2024-04-15T13:38:28.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:38:29.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:38:30.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:38:31.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:38:32.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:38:33.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:38:34.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:38:35.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:38:36.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:38:37.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:38:38.542Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:38:38.542Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:38:38.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:38:39.542Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:38:39.546Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:38:39.546Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:38:39.546Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}]
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001} {NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001}]
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5154 138426 14550001 138426014550001}
+2024-04-15T13:38:39.546Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:39.546Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5154 138426 14550001 138426014550001}) capacity: 100, load: 0 / neighbor: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}] / overload threshold 20, target threshold 0
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 1454c001 } 16
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5154 138426 14550001 138426014550001}: 7
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 7
+2024-04-15T13:38:39.546Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:1454c001 CellObjID:}:7]
+2024-04-15T13:38:39.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:38:40.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:38:41.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:38:42.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:38:43.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:38:44.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:38:45.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:38:47.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:38:48.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:38:49.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:49.550Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:38:49.550Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:38:50.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:38:50.550Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:38:50.553Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:38:50.553Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:38:50.553Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:38:50.553Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:50.553Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 22
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 12
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 12
+2024-04-15T13:38:50.553Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:12]
+2024-04-15T13:38:51.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:52.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:38:53.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:38:54.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:55.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:38:56.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:57.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:58.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:38:59.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:00.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:00.556Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:00.556Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:01.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:39:01.557Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:01.560Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:01.560Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:01.560Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:39:01.561Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:01.561Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 12
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 21
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 21
+2024-04-15T13:39:01.561Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:21]
+2024-04-15T13:39:02.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:03.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:04.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:05.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:06.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:39:07.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:39:08.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:39:09.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:39:10.241Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -112, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:39:10.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:39:11.564Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:11.564Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:11.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:39:12.565Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:12.570Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:12.570Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:39:12.570Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:39:12.570Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:12.570Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 21
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 9
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 9
+2024-04-15T13:39:12.570Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:9]
+2024-04-15T13:39:12.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:39:13.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:39:14.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:39:15.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:39:16.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:39:17.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:39:18.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:39:19.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:39:20.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:39:21.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:39:22.573Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:22.573Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:22.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:39:23.573Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:23.576Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:23.576Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:39:23.576Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:39:23.576Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:23.576Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 9
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 24
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 24
+2024-04-15T13:39:23.576Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:24]
+2024-04-15T13:39:23.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:39:24.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:39:25.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:39:26.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:39:27.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:39:28.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:39:29.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:39:30.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:39:31.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:39:32.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:39:33.579Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:33.579Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:33.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:39:34.579Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:34.583Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:34.583Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:39:34.583Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:39:34.583Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:34.583Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 24
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 21
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 21
+2024-04-15T13:39:34.583Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:21]
+2024-04-15T13:39:35.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:39:36.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:39:37.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:38.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:39.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:40.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:41.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:39:42.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:43.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:44.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:39:44.586Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:44.586Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:45.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:39:45.587Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:45.590Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:45.590Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:45.590Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:39:45.590Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:45.590Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:45.590Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:45.591Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 21
+2024-04-15T13:39:45.591Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 17
+2024-04-15T13:39:45.591Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 17
+2024-04-15T13:39:45.591Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:17]
+2024-04-15T13:39:46.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:39:47.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:48.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:39:49.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:39:50.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:51.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:39:52.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:53.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:39:54.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:39:55.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:39:55.593Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:39:55.593Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:39:56.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:39:56.594Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:39:56.598Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:39:56.598Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:56.598Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}]
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001} {NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001}]
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5154 138426 14550001 138426014550001}
+2024-04-15T13:39:56.598Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:56.598Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5154 138426 14550001 138426014550001}) capacity: 0, load: 100 / neighbor: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}] / overload threshold 20, target threshold 0
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 1454c001 } 7
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5154 138426 14550001 138426014550001}: 22
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 22
+2024-04-15T13:39:56.598Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:1454c001 CellObjID:}:22]
+2024-04-15T13:39:57.242Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:39:58.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -112, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:39:58.926Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:39:59.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:40:00.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:40:01.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:02.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:03.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:04.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:05.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:40:06.600Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:40:06.600Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:40:06.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:07.601Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:40:07.605Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:40:07.605Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:40:07.605Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:40:07.605Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:07.605Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 17
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 11
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 11
+2024-04-15T13:40:07.605Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:11]
+2024-04-15T13:40:07.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:08.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:09.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:10.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:11.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:12.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:13.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:40:14.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:15.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:16.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:17.607Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:40:17.607Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:40:17.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:18.608Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:40:18.611Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:40:18.612Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:40:18.612Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:40:18.612Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:18.612Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 11
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 10
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 10
+2024-04-15T13:40:18.612Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:10]
+2024-04-15T13:40:18.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:40:19.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:40:20.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:40:21.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:40:23.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:40:24.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:40:25.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:40:26.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:40:27.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:40:28.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:40:28.615Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:40:28.615Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:40:29.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:40:29.616Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:40:29.619Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:40:29.620Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:40:29.620Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}]
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001} {NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001}]
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5154 138426 14550001 138426014550001}
+2024-04-15T13:40:29.620Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:29.620Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5154 138426 14550001 138426014550001}) capacity: 0, load: 100 / neighbor: [{e2:1/5154 138426 14550001 138426014550001} {e2:1/5153 138426 1454c001 13842601454c001}] / overload threshold 20, target threshold 0
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 1454c001 } 22
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5154 138426 14550001 138426014550001}: 22
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 22
+2024-04-15T13:40:29.620Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:1454c001 CellObjID:}:22]
+2024-04-15T13:40:30.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:40:31.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:40:32.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:40:33.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:40:34.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:40:35.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:40:36.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:40:37.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:40:38.336Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:40:39.327Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:40:39.623Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:40:39.623Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:40:40.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:40:40.623Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:40:40.628Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:40:40.628Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:40:40.628Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:40:40.628Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:40:40.628Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:40:40.628Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:40:40.628Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:40:40.628Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:40:40.629Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:40.629Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 10
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 24
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 24
+2024-04-15T13:40:40.629Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:24]
+2024-04-15T13:40:41.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:40:42.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:40:43.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:40:44.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:40:45.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:40:46.242Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -112, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:40:47.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:40:48.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:40:49.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:50.632Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:40:50.632Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:40:50.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:40:51.632Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:40:51.636Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:40:51.636Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:40:51.636Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:40:51.636Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:51.636Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 24
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 21
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 21
+2024-04-15T13:40:51.636Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:21]
+2024-04-15T13:40:51.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:52.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:40:53.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:40:54.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:55.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:40:56.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:57.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:58.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:40:59.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:00.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:01.639Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:01.639Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:01.840Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:41:02.639Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:02.642Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:02.642Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:02.642Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:02.642Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:02.643Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:02.643Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 21
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 17
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 17
+2024-04-15T13:41:02.643Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:17]
+2024-04-15T13:41:02.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:03.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:04.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:05.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:06.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:41:07.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:41:08.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:41:09.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:41:10.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -112, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:41:11.246Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:41:12.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:41:12.646Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:12.646Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:13.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:41:13.647Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:13.651Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:13.651Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:41:13.651Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:13.651Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:13.651Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 17
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 11
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 11
+2024-04-15T13:41:13.651Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:11]
+2024-04-15T13:41:14.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:41:15.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:41:16.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:41:17.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:41:18.242Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:41:19.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:41:20.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:41:21.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] 0, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:41:22.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:41:23.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:41:23.654Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:23.655Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:24.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:41:24.655Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:24.659Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:24.659Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:41:24.659Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0}]
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:24.659Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:24.659Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 11
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 22
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 22
+2024-04-15T13:41:24.659Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:22]
+2024-04-15T13:41:25.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:41:26.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:41:27.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:41:28.328Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:41:29.327Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:41:30.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:41:31.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:41:32.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-112] 
+
+2024-04-15T13:41:33.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -111, rsrpNeigbors map[13842601454c001:-111] 
+
+2024-04-15T13:41:34.662Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:34.662Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:34.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:1] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:41:35.662Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:35.666Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:35.666Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:41:35.666Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1}]
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:35.667Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:35.667Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 22
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 17
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 17
+2024-04-15T13:41:35.667Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:17]
+2024-04-15T13:41:35.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:41:36.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:41:37.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:38.598Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:38, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -107, RsrpNeighbors map[138426014550001:-115]
+2024-04-15T13:41:38.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:39.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:40.599Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:40, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -104, RsrpNeighbors map[138426014550001:-116]
+2024-04-15T13:41:40.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:41.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:41:42.601Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:42, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -100, RsrpNeighbors map[138426014550001:-117]
+2024-04-15T13:41:42.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:43.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:44.602Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:44, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -92, RsrpNeighbors map[138426014550001:-118]
+2024-04-15T13:41:44.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:41:45.670Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:45.670Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:45.840Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] 0, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:41:46.605Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:46, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing 0, RsrpNeighbors map[138426014550001:-119]
+2024-04-15T13:41:46.671Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:46.675Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:46.675Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:46.675Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:46.675Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:46.675Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:46.675Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 17
+2024-04-15T13:41:46.676Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 20
+2024-04-15T13:41:46.676Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 20
+2024-04-15T13:41:46.676Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:20]
+2024-04-15T13:41:46.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -84, rsrpNeigbors map[138426014550001:-119] 
+
+2024-04-15T13:41:47.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -92, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:48.607Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:48, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -92, RsrpNeighbors map[138426014550001:-118]
+2024-04-15T13:41:48.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -96, rsrpNeigbors map[138426014550001:-118] 
+
+2024-04-15T13:41:49.839Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -100, rsrpNeigbors map[138426014550001:-117] 
+
+2024-04-15T13:41:50.609Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:50, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -100, RsrpNeighbors map[138426014550001:-117]
+2024-04-15T13:41:50.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -102, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:51.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -104, rsrpNeigbors map[138426014550001:-116] 
+
+2024-04-15T13:41:52.610Z	INFO	cco-mon/northbound/manager	northbound/methods.go:56	Time 2024-04-15 13:41:52, UeID 0000000007034939, S_CGI 13842601454c001, RsrpServing -104, RsrpNeighbors map[138426014550001:-116]
+2024-04-15T13:41:52.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -106, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:53.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -107, rsrpNeigbors map[138426014550001:-115] 
+
+2024-04-15T13:41:54.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -108, rsrpNeigbors map[138426014550001:-114] 
+
+2024-04-15T13:41:55.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -109, rsrpNeigbors map[138426014550001:-113] 
+
+2024-04-15T13:41:56.679Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:41:56.679Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:41:56.838Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-112] 
+
+2024-04-15T13:41:57.680Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:41:57.685Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:41:57.685Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:57.685Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 1} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 0}]
+2024-04-15T13:41:57.685Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:41:57.685Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:41:57.686Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:57.686Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 0, load: 100 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 20
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 11
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 11
+2024-04-15T13:41:57.686Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:11]
+2024-04-15T13:41:57.837Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:13842601454c001] -111, rsrpNeigbors map[138426014550001:-111] 
+
+2024-04-15T13:41:59.327Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -109, rsrpNeigbors map[13842601454c001:-113] 
+
+2024-04-15T13:42:00.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -108, rsrpNeigbors map[13842601454c001:-114] 
+
+2024-04-15T13:42:01.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -107, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:42:02.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -106, rsrpNeigbors map[13842601454c001:-115] 
+
+2024-04-15T13:42:03.330Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -104, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:42:04.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -102, rsrpNeigbors map[13842601454c001:-116] 
+
+2024-04-15T13:42:05.326Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -100, rsrpNeigbors map[13842601454c001:-117] 
+
+2024-04-15T13:42:06.328Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -96, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:42:07.325Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -92, rsrpNeigbors map[13842601454c001:-118] 
+
+2024-04-15T13:42:07.688Z	WARN	github.com/onosproject/cco-mon/pkg/southbound/e2policy	e2policy/handler.go:122	cannot retrieve ran functions
+2024-04-15T13:42:07.688Z	ERROR	Controller/controller	controller/handler.go:138	cannot retrieve ran functions
+github.com/onosproject/cco-mon/pkg/controller.(*handler).startControlLogic
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:138
+github.com/onosproject/cco-mon/pkg/controller.(*handler).Run
+	/go/src/github.com/cco-mon/pkg/controller/handler.go:81
+github.com/onosproject/cco-mon/pkg/manager.(*Manager).start.func1
+	/go/src/github.com/cco-mon/pkg/manager/manager.go:263
+2024-04-15T13:42:08.329Z	INFO	cco-mon/mho	mho/mho.go:130	[5QI:2] ue [ID:0000000007034939] rsrpServing [cgi:138426014550001] -84, rsrpNeigbors map[13842601454c001:-119] 
+
+2024-04-15T13:42:08.689Z	INFO	Controller/controller	controller/handler.go:79	#handler.run.76 Controller logic before
+2024-04-15T13:42:08.694Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:64	Store RNIB Handler
+2024-04-15T13:42:08.694Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:65	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:42:08.694Z	INFO	github.com/onosproject/cco-mon/pkg/monitor	monitor/handler.go:58	RNIB List [{{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} Neighbors} [{14550001 138426}]} {{{e2:1/5153/1454c001 e2:1/5153 13842601454c001 {1454c001 138426}} NumUEs} 0} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} Neighbors} [{1454c001 138426}]} {{{e2:1/5154/14550001 e2:1/5154 138426014550001 {14550001 138426}} NumUEs} 1}]
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:93	interval 
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:149	#handler.updateocnstore.144 before
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:151	#handler.updateocnstore.144 after
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:106	Update Ocn Store test pass
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:107	Ocn store is &{map[{e2:1/5153 138426 1454c001 13842601454c001}:0xc0004a6df8 {e2:1/5154 138426 14550001 138426014550001}:0xc0004a6e00] {{0 0} 0 0 0 0} 0xc000090620}
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:115	Total number of UEs: 1
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:123	Cell IDs: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}]
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:128	cells [{NodeID:e2:1/5153 PlmnID:138426 CellID:1454c001 CellObjID:13842601454c001} {NodeID:e2:1/5154 PlmnID:138426 CellID:14550001 CellObjID:138426014550001}]
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:133	Serving cell: {e2:1/5153 138426 1454c001 13842601454c001}
+2024-04-15T13:42:08.694Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:42:08.694Z	INFO	github.com/onosproject/cco-mon/pkg/store/store/storage	storage/storage.go:84	We are inside Get function
+2024-04-15T13:42:08.694Z	INFO	Controller/controller	controller/handler.go:318	Serving cell ({e2:1/5153 138426 1454c001 13842601454c001}) capacity: 100, load: 0 / neighbor: [{e2:1/5153 138426 1454c001 13842601454c001} {e2:1/5154 138426 14550001 138426014550001}] / overload threshold 20, target threshold 0
+2024-04-15T13:42:08.695Z	INFO	Controller/controller	controller/handler.go:326	Neighbor cell (%v) OCN: %v{ 138426 14550001 } 11
+2024-04-15T13:42:08.695Z	INFO	Controller/controller	controller/handler.go:349	Random ocn in cid {e2:1/5153 138426 1454c001 13842601454c001}: 13
+2024-04-15T13:42:08.695Z	INFO	Controller/controller	controller/handler.go:351	To understand the data structure random value  meastype.QOffsetRange: 13
+2024-04-15T13:42:08.695Z	INFO	Controller/controller	controller/handler.go:357	Final tmpOcns content: map[{NodeID: PlmnID:138426 CellID:14550001 CellObjID:}:13]
